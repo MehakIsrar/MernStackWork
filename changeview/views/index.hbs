@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+
+    <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <title>Portfolio webiste</title>
+</head>
+
+
+<body>
+
+{{> header}} 
+
+    <section class="hero" id="about">
+        <img src="/serverstaticwebsite/src/Images/pimage.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                I am a passionate software engineer who loves to try new things and challenging process. Depsite this fact this is also true sometimes I feel super lazy. But when it comes to complete the task I give my 100% to comeplete it.
+            </p>
+        </div>
+    </section>
+
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            I have done my software engineering from comsats Lahore. MY major is web development. Currently living in lahore.
+        </p>
+
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="Images/node.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="Images/express.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="Images/mongo.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img src="Images/react.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="Images/git.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="Images/js.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="Images/qbank.png" expense-tracker " loading="lazy " class="project-pic " />
+                <h3 class="project-title ">Qbank</h3>
+                <p class="project-details ">
+                    This website remove the headache of genration of mannual quiz. User will just have to enter the few keywords in search bar and website will automatically genrate the quiz.
+                </p>
+                <a href="# " target="_blank " class="project-link "><b>Check it Out</b></a>
+            </div>
+            <div class="project-container project-card ">
+                <img src="Images/jb.jpg " alt="netflic-clone " loading="lazy " class="project-pic " />
+                <h3 class="project-title ">Job website</h3>
+                <p class="project-details ">
+                    User will be able to find the dream job here. User will search the jobs in search bar and apply the filter to get the better search result.
+                </p>
+                <a href="# " target="_blank " class="project-link "><b>Check it Out</b></a>
+            </div>
+            <div class="project-container project-card ">
+                <img src="Images/portfolio website.jpg " alt="greeny-earth " loading="lazy " class="project-pic " />
+                <h3 class="project-title ">Portfolio Website</h3>
+                <p class="project-details ">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi quos culpa aut saepe! Alias!
+                </p>
+                <a href="# " target="_blank " class="project-link "><b>Check it Out</b></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact " id="contact ">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container ">
+          <div class="contact-form ">
+            <form action="https://formspree.io/f/xyylngw " method="POST ">
+              <div class="form-control ">
+                <label for="name ">Name</label>
+                <input
+                  type="text "
+                  id="name "
+                  name="sender-name "
+                  placeholder="Enter Your Name "
+                  class="input-field "
+                  required
+                />
+              </div>
+              <div class="form-control ">
+                <label for="email ">Email</label>
+                <input
+                  type="email "
+                  id="email "
+                  name="sender-email "
+                  placeholder="Enter Your Email "
+                  class="input-field "
+                  required
+                />
+              </div>
+              <div class="form-control ">
+                <label for="message ">Message</label>
+                <textarea
+                  id="message "
+                  cols="60 "
+                  rows="10 "
+                  placeholder="Enter Your Message "
+                  name="message "
+                  class="input-field "
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit "
+                value="Submit "
+                id="submit-btn "
+                class="submit-btn "
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <script src="code/scripts/app.js "></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+</body>
+
+</html>
