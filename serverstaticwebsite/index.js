@@ -4,10 +4,17 @@ const path = require("path");
 
 const port = 3000;
 //console.log(__dirname); // to print the current directory path 
-//console.log(path.join(__dirname, '../code')); //to move to the next path 
-const staticpath = (path.join(__dirname, '../code'));
+console.log(path.join(__dirname, '../serverstaticwesbite/src')); //to move to the next path 
+const staticpath = (path.join(__dirname, "../serverstaticwesbite/src"));
+
+app.set("view engine", "hbs");
 app.use(express.static(staticpath));
 
+app.get("", (req, res) => {
+    res.render('index', {
+        changing: "Developmentfeature"
+    });
+});
 app.get('/', (req, res) => {
     res.send("Hi I am express website home page");
 });
