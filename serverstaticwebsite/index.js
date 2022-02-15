@@ -19,7 +19,7 @@ hbs.registerPartials(Partialpath);
 app.use(express.static(staticpath));
 
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
     res.render('index', {
         changing: "Developmentfeature"
     });
@@ -29,6 +29,12 @@ app.get("/about", (req, res) => {
 
     res.render("about");
 });
+app.get("*", (req, res) => {
+    res.render("404page", {
+
+        errorcomment: "OOPs page not found"
+    });
+});
 app.get('/', (req, res) => {
     res.send("Hi I am express website home page");
 });
@@ -36,7 +42,6 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send("about page");
 });
-
 app.listen(port, () => {
     console.log('Listening request ${port}');
 });
